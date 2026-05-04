@@ -410,8 +410,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   width: 180px;
   height: 60px;
   background-color: #ffffff; /* Logonun yeni rengi */
-  -webkit-mask-image: url('../images/logo.png');
-  mask-image: url('../images/logo.png');
+  -webkit-mask-image: url('../images/logo.png'); mask-mode: luminance; -webkit-mask-mode: luminance;
+  mask-image: url('../images/logo.png'); mask-mode: luminance;
   -webkit-mask-size: contain;
   mask-size: contain;
   -webkit-mask-repeat: no-repeat;
@@ -424,4 +424,5 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform: scale(1.05);
   background-color: #ffffff; opacity: 0.8; /* Hover rengi */
 }
+
 
