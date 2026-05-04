@@ -272,7 +272,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .about-content { padding: 2rem 0; }
 .about-content p { font-size: 1rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; }
 .about-list { list-style: none; margin: 2rem 0; }
-.about-list li { display: flex; align-items: flex-start; gap: 0; margin-left: -50px; padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--text-secondary); }
+.about-list li { display: flex; align-items: flex-start; gap: 0; padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--text-secondary); }
 .about-list li::before { content: '→'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
 
 /* ─── CTA BANNER ─── */
@@ -426,28 +426,68 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 0; margin-left: -50px;
+  gap: 0;
   text-decoration: none;
 }
 .nav-logo-icon-img {
-  width: 140px;
+  width: 160px; /* Image is still large */
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(4px); transition: transform 0.3s ease;
+  transform: translateX(-40px) translateY(12px); /* Shift mountain to the center of our new narrow crop */
+}
+.nav-logo-icon-part {
+  width: 80px; /* The actual space the icon takes is now only 80px */
+  height: 70px;
+  overflow: hidden; /* Cut off the empty sides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-logo:hover .nav-logo-icon-img {
-  transform: scale(1.1);
-}
-.nav-logo:hover .nav-logo-icon-img {
-  width: 140px;
+  width: 160px; /* Image is still large */
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(4px); transition: transform 0.3s ease;
+  transform: translateX(-40px) translateY(12px); /* Shift mountain to the center of our new narrow crop */
+}
+.nav-logo-icon-part {
+  width: 80px; /* The actual space the icon takes is now only 80px */
+  height: 70px;
+  overflow: hidden; /* Cut off the empty sides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-logo:hover .nav-logo-icon-img {
-  transform: scale(1.1);
+  width: 160px; /* Image is still large */
+  height: auto;
+  display: block;
+  filter: url(#remove-black-filter);
+  transform: translateX(-40px) translateY(12px); /* Shift mountain to the center of our new narrow crop */
+}
+.nav-logo-icon-part {
+  width: 80px; /* The actual space the icon takes is now only 80px */
+  height: 70px;
+  overflow: hidden; /* Cut off the empty sides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-logo:hover .nav-logo-icon-img {
+  width: 160px; /* Image is still large */
+  height: auto;
+  display: block;
+  filter: url(#remove-black-filter);
+  transform: translateX(-40px) translateY(12px); /* Shift mountain to the center of our new narrow crop */
+}
+.nav-logo-icon-part {
+  width: 80px; /* The actual space the icon takes is now only 80px */
+  height: 70px;
+  overflow: hidden; /* Cut off the empty sides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-logo-text-part {
   display: flex;
@@ -475,25 +515,66 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-top: 4px;
 }
 .nav-logo:hover .nav-logo-icon-img {
-  width: 140px;
+  width: 160px; /* Image is still large */
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(4px); transition: transform 0.3s ease;
+  transform: translateX(-40px) translateY(12px); /* Shift mountain to the center of our new narrow crop */
+}
+.nav-logo-icon-part {
+  width: 80px; /* The actual space the icon takes is now only 80px */
+  height: 70px;
+  overflow: hidden; /* Cut off the empty sides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-logo:hover .nav-logo-icon-img {
-  transform: scale(1.1);
-}
-.nav-logo:hover .nav-logo-icon-img {
-  width: 140px;
+  width: 160px; /* Image is still large */
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(4px); transition: transform 0.3s ease;
+  transform: translateX(-40px) translateY(12px); /* Shift mountain to the center of our new narrow crop */
+}
+.nav-logo-icon-part {
+  width: 80px; /* The actual space the icon takes is now only 80px */
+  height: 70px;
+  overflow: hidden; /* Cut off the empty sides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-logo:hover .nav-logo-icon-img {
-  transform: scale(1.1);
+  width: 160px; /* Image is still large */
+  height: auto;
+  display: block;
+  filter: url(#remove-black-filter);
+  transform: translateX(-40px) translateY(12px); /* Shift mountain to the center of our new narrow crop */
 }
+.nav-logo-icon-part {
+  width: 80px; /* The actual space the icon takes is now only 80px */
+  height: 70px;
+  overflow: hidden; /* Cut off the empty sides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-logo:hover .nav-logo-icon-img {
+  width: 160px; /* Image is still large */
+  height: auto;
+  display: block;
+  filter: url(#remove-black-filter);
+  transform: translateX(-40px) translateY(12px); /* Shift mountain to the center of our new narrow crop */
+}
+.nav-logo-icon-part {
+  width: 80px; /* The actual space the icon takes is now only 80px */
+  height: 70px;
+  overflow: hidden; /* Cut off the empty sides */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 
 
