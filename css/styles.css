@@ -429,19 +429,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 12px;
   text-decoration: none;
 }
-.nav-logo-icon-part {
-  width: 42px;
-  height: 42px;
-  background-color: var(--accent);
-  -webkit-mask-image: url('../images/mountain.svg');
-  mask-image: url('../images/mountain.svg');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
+.nav-logo-icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  mix-blend-mode: screen; /* Removes black background */
+  filter: brightness(1.2); /* Makes the white pop more */
   transition: transform 0.3s ease;
+}
+.nav-logo:hover .nav-logo-icon-img {
+  transform: scale(1.1);
 }
 .nav-logo-text-part {
   display: flex;
@@ -468,18 +465,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   letter-spacing: 0.3em;
   margin-top: 4px;
 }
-.nav-logo:hover .nav-logo-icon-part {
-  width: 42px;
-  height: 42px;
-  background-color: var(--accent);
-  -webkit-mask-image: url('../images/mountain.svg');
-  mask-image: url('../images/mountain.svg');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
+.nav-logo:hover .nav-logo-icon-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  mix-blend-mode: screen; /* Removes black background */
+  filter: brightness(1.2); /* Makes the white pop more */
   transition: transform 0.3s ease;
 }
+.nav-logo:hover .nav-logo-icon-img {
+  transform: scale(1.1);
+}
+
 
