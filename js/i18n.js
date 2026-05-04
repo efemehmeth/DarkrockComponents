@@ -1,4 +1,4 @@
-﻿const translations = {
+const translations = {
     en: {
         "nav-home": "Home", "nav-products": "Products", "nav-about": "About", "nav-contact": "Contact", "nav-cta": "Get a Quote →",
         "hero-tag": "CNC Precision · 7075-T6 Aluminum · Made in Turkey",
@@ -68,6 +68,9 @@
         "contact-email-label": "E-posta", "contact-insta-label": "Instagram", "contact-loc-label": "Konum", "contact-resp-label": "Cevap Süresi",
         "contact-resp-val": "Genellikle 24 saat içinde", "contact-shipping-title": "🚚 Nakliye Bilgisi", "contact-shipping-desc": "Tüm parçalar sipariş üzerine yapılır. Teslim süresi genellikle 1-2 haftadır.",
         "form-first-name": "Ad", "form-last-name": "Soyad", "form-email": "E-posta Adresi", "form-type": "Başvuru Türü", "form-msg": "Mesaj", "form-submit": "Mesaj Gönder →"
+    },
+    flag: {
+        en: "🇬🇧", tr: "🇹🇷", de: "🇩🇪"
     },
     de: {
         "nav-home": "Startseite", "nav-products": "Produkte", "nav-about": "Über uns", "nav-contact": "Kontakt", "nav-cta": "Angebot →",
