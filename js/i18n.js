@@ -1,4 +1,4 @@
-const translations = {
+﻿const translations = {
     en: {
         "nav-home": "Home", "nav-products": "Products", "nav-about": "About", "nav-contact": "Contact", "nav-cta": "Get a Quote →",
         "hero-tag": "CNC Precision · 7075-T6 Aluminum · Made in Turkey",
@@ -128,3 +128,4 @@ document.addEventListener('DOMContentLoaded', () => {
     const langBtn = document.getElementById('lang-switcher-btn');
     if (langBtn) langBtn.addEventListener('click', (e) => { e.preventDefault(); cycleLanguage(); });
 });
+
