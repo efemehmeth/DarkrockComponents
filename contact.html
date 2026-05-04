@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — DarkRock Components</title>
+  <meta name="description" content="Get in touch with DarkRock Components for pricing, custom orders, or wholesale inquiries. Every component is built to order.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .contact-hero {
+      padding: calc(var(--nav-height) + 5rem) 5% 4rem;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border);
+    }
+    .contact-hero-inner { max-width: 1400px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none">
+        <rect width="36" height="36" fill="#ff4500" rx="2"/>
+        <path d="M8 26L14 10L20 20L24 14L28 26" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="18" cy="18" r="3" fill="white"/>
+      </svg>
+      <span class="nav-logo-text">Dark<span>Rock</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Get a Quote →</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileClose">✕</button>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<div class="contact-hero">
+  <div class="contact-hero-inner">
+    <span class="section-eyebrow">// Get in Touch</span>
+    <h1 style="font-size:clamp(2.5rem,5vw,4rem); margin-bottom:1rem;">Let's build <span style="color:var(--accent)">something.</span></h1>
+    <p style="color:var(--text-secondary); max-width:480px;">Whether you need a standard part, custom spec, or want to discuss wholesale — I respond to every message personally.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <!-- INFO -->
+      <div class="contact-info reveal">
+        <div class="contact-item">
+          <div class="contact-item-icon">✉️</div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-val">contact@darkrockcomponents.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📸</div>
+          <div>
+            <div class="contact-item-label">Instagram</div>
+            <div class="contact-item-val">@darkrockcomponents</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Location</div>
+            <div class="contact-item-val">Turkey — Shipping Worldwide</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">⏱️</div>
+          <div>
+            <div class="contact-item-label">Response Time</div>
+            <div class="contact-item-val">Usually within 24 hours</div>
+          </div>
+        </div>
+
+        <div style="margin-top:2.5rem; padding:2rem; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius);">
+          <h3 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:700; margin-bottom:1rem;">🚚 Shipping Info</h3>
+          <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.7;">All parts are made to order. Lead time is typically 1–2 weeks. Express options available. I ship via DHL Express worldwide.</p>
+        </div>
+
+        <div style="margin-top:1rem; padding:2rem; background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius);">
+          <h3 style="font-family:'Outfit',sans-serif; font-size:1rem; font-weight:700; margin-bottom:1rem;" id="wholesale">💼 Wholesale Enquiries</h3>
+          <p style="font-size:0.85rem; color:var(--text-secondary); line-height:1.7;">Shops and distributors: select "Wholesale" in the form. Minimum order quantities and dealer pricing available on request.</p>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div class="reveal">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Efe" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Yılmaz" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Inquiry Type</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a topic...</option>
+              <option value="pricing">Product Pricing</option>
+              <option value="custom">Custom Order</option>
+              <option value="wholesale">Wholesale / Dealer</option>
+              <option value="technical">Technical Question</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="product">Product Interest (optional)</label>
+            <select id="product" name="product">
+              <option value="" selected>Not product-specific</option>
+              <option value="dr-01-handlebar">DR-01 Handlebar</option>
+              <option value="dr-s1-stem">DR-S1 Stem</option>
+              <option value="dr-p1-seatpost">DR-P1 Seatpost</option>
+              <option value="dr-g2-gyro">DR-G2 Gyro System</option>
+              <option value="custom">Custom Part</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me what you're looking for — specs, quantities, deadlines, anything helps..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">Send Message →</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom" style="padding-top:0; border-top:none;">
+      <p>© 2025 DarkRock Components. All rights reserved.</p>
+      <div class="footer-badge">Made in Turkey</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  // Pre-select product from URL param
+  const params = new URLSearchParams(location.search);
+  const prod = params.get('product');
+  if (prod) {
+    const sel = document.getElementById('product');
+    if (sel) {
+      [...sel.options].forEach(o => { if (o.value === prod) o.selected = true; });
+    }
+  }
+</script>
+</body>
+</html>

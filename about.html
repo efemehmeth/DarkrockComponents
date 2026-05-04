@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — DarkRock Components</title>
+  <meta name="description" content="DarkRock Components is built by Efe, a 21-year-old CNC machinist and MTB rider from Turkey crafting precision parts that simply don't exist anywhere else.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .about-hero {
+      padding: calc(var(--nav-height) + 5rem) 5% 5rem;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-secondary);
+    }
+    .about-hero-inner { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    @media(max-width:768px){ .about-hero-inner { grid-template-columns:1fr; gap:2rem; } }
+
+    .timeline { position: relative; padding-left: 2rem; }
+    .timeline::before { content:''; position:absolute; left:0; top:0; bottom:0; width:1px; background: linear-gradient(to bottom, var(--accent), transparent); }
+    .timeline-item { position: relative; padding: 0 0 2.5rem 2rem; }
+    .timeline-item::before { content:''; position:absolute; left:-2rem; top:4px; width:10px; height:10px; background:var(--accent); border-radius:50%; border:2px solid var(--bg-primary); }
+    .timeline-date { font-size:0.7rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--accent); margin-bottom:0.4rem; }
+    .timeline-title { font-family:'Outfit',sans-serif; font-size:1.1rem; font-weight:700; margin-bottom:0.4rem; }
+    .timeline-desc { font-size:0.875rem; color:var(--text-secondary); line-height:1.7; }
+
+    .process-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:0; border:1px solid var(--border); }
+    .process-step { padding:2.5rem 2rem; border-right:1px solid var(--border); border-bottom:1px solid var(--border); position:relative; }
+    .process-step:last-child { border-right:none; }
+    .process-num { font-family:'Outfit',sans-serif; font-size:4rem; font-weight:900; color:rgba(255,69,0,0.08); line-height:1; margin-bottom:1rem; }
+    .process-step h3 { font-family:'Outfit',sans-serif; font-size:1rem; font-weight:700; margin-bottom:0.5rem; }
+    .process-step p { font-size:0.83rem; color:var(--text-secondary); line-height:1.7; }
+  </style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg class="nav-logo-icon" viewBox="0 0 36 36" fill="none">
+        <rect width="36" height="36" fill="#ff4500" rx="2"/>
+        <path d="M8 26L14 10L20 20L24 14L28 26" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="18" cy="18" r="3" fill="white"/>
+      </svg>
+      <span class="nav-logo-text">Dark<span>Rock</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Get a Quote →</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileClose">✕</button>
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- HERO -->
+<div class="about-hero">
+  <div class="about-hero-inner">
+    <div class="reveal">
+      <span class="section-eyebrow">// The Story</span>
+      <h1 style="font-size:clamp(2.5rem,5vw,4.5rem); margin-bottom:1.5rem;">One builder.<br><span style="color:var(--accent)">Zero</span> shortcuts.</h1>
+      <p style="color:var(--text-secondary); font-size:1.05rem; line-height:1.8; max-width:500px;">I'm Efe. 21 years old. I run a CNC lathe and mill in my own workshop and I make mountain bike parts that I genuinely wish existed when I was building my first bike.</p>
+    </div>
+    <div class="reveal">
+      <img src="images/hero_bg.png" alt="CNC workshop" style="border:1px solid var(--border); border-radius:var(--radius);">
+    </div>
+  </div>
+</div>
+
+<!-- STORY -->
+<section class="section">
+  <div class="section-inner">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start;" class="about-grid">
+      <div class="reveal">
+        <span class="section-eyebrow">// Background</span>
+        <h2 class="section-title" style="margin-bottom:2rem;">How it started.</h2>
+        <p style="color:var(--text-secondary); line-height:1.8; margin-bottom:1.25rem;">It started with frustration. I kept looking at MTB components on the market and thinking — these tolerances are sloppy, this material is mediocre, and I'm paying premium prices for something I could make better myself.</p>
+        <p style="color:var(--text-secondary); line-height:1.8; margin-bottom:1.25rem;">So I did. I got access to a 5-axis CNC machining centre, taught myself CAM programming, and started designing parts from the ground up — every dimension calculated, every surface finish intentional.</p>
+        <p style="color:var(--text-secondary); line-height:1.8;">DarkRock isn't a factory. It's a workshop. Every order is taken seriously because every part has my name on it.</p>
+      </div>
+      <div class="reveal">
+        <span class="section-eyebrow">// Timeline</span>
+        <h2 class="section-title" style="margin-bottom:2rem;">The journey.</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2021</div>
+            <div class="timeline-title">First contact with CNC</div>
+            <div class="timeline-desc">Started learning CAD and CAM. First practice cuts in aluminium scrap.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022</div>
+            <div class="timeline-title">First real part</div>
+            <div class="timeline-desc">Machined my first stem. Fit perfectly. The addiction began.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-title">First external orders</div>
+            <div class="timeline-desc">Friends and local riders started asking for parts. Word spread fast.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-title">DarkRock Components launches</div>
+            <div class="timeline-desc">Official brand. Full product lineup. Shipping worldwide.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section" id="process" style="background:var(--bg-secondary); border-top:1px solid var(--border); border-bottom:1px solid var(--border);">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">// How It's Made</span>
+      <h2 class="section-title">From billet to <span class="dim">bike.</span></h2>
+    </div>
+    <div class="process-grid reveal">
+      <div class="process-step">
+        <div class="process-num">01</div>
+        <h3>Design & Engineering</h3>
+        <p>Every part starts in CAD. Geometry is obsessed over — wall thicknesses, stress concentrations, interface dimensions. Nothing ships until the model is right.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">02</div>
+        <h3>Material Selection</h3>
+        <p>7075-T6 aluminium billet, sourced from certified suppliers. The same alloy used in aerospace applications — not the cheap 6061 most brands default to.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">03</div>
+        <h3>5-Axis CNC Machining</h3>
+        <p>Machined in multiple setups on a 5-axis centre. Tight tolerances held throughout. Every cut is programmed and verified before touching the billet.</p>
+      </div>
+      <div class="process-step">
+        <div class="process-num">04</div>
+        <h3>Finishing & Inspection</h3>
+        <p>Deburred by hand, anodized, and individually inspected against drawing before packing. No batch releases. Every part checked one by one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECS -->
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header reveal">
+      <span class="section-eyebrow">// Materials & Standards</span>
+      <h2 class="section-title">By the <span class="dim">numbers.</span></h2>
+    </div>
+    <div class="features-grid reveal">
+      <div class="feature-card">
+        <div class="feature-icon">🔬</div>
+        <h3 class="feature-title">7075-T6 Aluminium</h3>
+        <p class="feature-desc">Tensile strength up to 572 MPa. Over 40% stronger than 6061 while maintaining similar weight.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📏</div>
+        <h3 class="feature-title">±0.01mm Tolerance</h3>
+        <p class="feature-desc">Critical interfaces machined to within one-hundredth of a millimetre. Consistent across every part.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3 class="feature-title">Type III Anodize</h3>
+        <p class="feature-desc">Hard-anodized to 25–30μm depth for maximum surface hardness and corrosion resistance.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✅</div>
+        <h3 class="feature-title">100% Inspected</h3>
+        <p class="feature-desc">Every single component measured before shipping. No exceptions, no sampling, no compromise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <div class="cta-banner-inner">
+    <h2 class="reveal">Want something <span style="color:var(--accent)">custom?</span></h2>
+    <p class="reveal">Send me your DXF or STEP files and we'll figure it out. Custom one-offs and small batch runs welcome.</p>
+    <a href="contact.html" class="btn-primary reveal">Start a Conversation →</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-bottom" style="padding-top:0; border-top:none;">
+      <p>© 2025 DarkRock Components. All rights reserved.</p>
+      <div class="footer-badge">Made in Turkey</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
