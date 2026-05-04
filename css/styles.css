@@ -430,7 +430,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   text-decoration: none;
 }
 .nav-logo-icon-img {
-  width: 65px;
+  width: 90px;
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
@@ -440,7 +440,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform: scale(1.1);
 }
 .nav-logo:hover .nav-logo-icon-img {
-  width: 65px;
+  width: 90px;
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
@@ -475,7 +475,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-top: 4px;
 }
 .nav-logo:hover .nav-logo-icon-img {
-  width: 65px;
+  width: 90px;
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
@@ -485,7 +485,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transform: scale(1.1);
 }
 .nav-logo:hover .nav-logo-icon-img {
-  width: 65px;
+  width: 90px;
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
@@ -494,6 +494,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nav-logo:hover .nav-logo-icon-img {
   transform: scale(1.1);
 }
+
 
 
 
