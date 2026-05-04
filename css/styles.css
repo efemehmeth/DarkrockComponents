@@ -396,7 +396,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* ─── LOGO ─── */
 .nav-logo-img {
-  height: 45px;
+  height: 55px;
   width: auto;
   display: block;
   filter: brightness(1.1);
@@ -405,3 +405,4 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nav-logo:hover .nav-logo-img {
   transform: scale(1.05);
 }
+
