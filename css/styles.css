@@ -394,15 +394,33 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .lang-switcher-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
 @media (max-width: 768px) { .lang-switcher { margin-left: 0; margin-right: 1rem; } }
 
-/* ─── LOGO ─── */
-.nav-logo-img {
-  height: 55px;
-  width: auto;
-  display: block;
-  filter: brightness(1.1);
-  transition: transform 0.3s ease;
-}
+
 .nav-logo:hover .nav-logo-img {
   transform: scale(1.05);
 }
 
+
+/* ─── NEW ORIGINAL LOGO FIX ─── */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.nav-logo-img-wrapper {
+  width: 180px;
+  height: 60px;
+  background-color: #ff4500; /* Logonun yeni rengi */
+  -webkit-mask-image: url('../images/logo.png');
+  mask-image: url('../images/logo.png');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  transition: transform 0.3s ease;
+}
+.nav-logo:hover .nav-logo-img-wrapper {
+  transform: scale(1.05);
+  background-color: #ff5e1a; /* Hover rengi */
+}
