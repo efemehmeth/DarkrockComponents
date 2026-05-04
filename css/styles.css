@@ -272,7 +272,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .about-content { padding: 2rem 0; }
 .about-content p { font-size: 1rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; }
 .about-list { list-style: none; margin: 2rem 0; }
-.about-list li { display: flex; align-items: flex-start; gap: 12px; padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--text-secondary); }
+.about-list li { display: flex; align-items: flex-start; gap: 4px; padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--text-secondary); }
 .about-list li::before { content: '→'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
 
 /* ─── CTA BANNER ─── */
@@ -413,7 +413,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
-  transform: translateY(12px); transition: transform 0.3s ease;
+  transform: translateY(4px); transition: transform 0.3s ease;
 }
 .nav-logo:hover .nav-logo-img-wrapper {
   transform: scale(1.05);
@@ -426,7 +426,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
   text-decoration: none;
 }
 .nav-logo-icon-img {
@@ -434,7 +434,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(12px); transition: transform 0.3s ease;
+  transform: translateY(4px); transition: transform 0.3s ease;
 }
 .nav-logo:hover .nav-logo-icon-img {
   transform: scale(1.1);
@@ -444,7 +444,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(12px); transition: transform 0.3s ease;
+  transform: translateY(4px); transition: transform 0.3s ease;
 }
 .nav-logo:hover .nav-logo-icon-img {
   transform: scale(1.1);
@@ -479,7 +479,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(12px); transition: transform 0.3s ease;
+  transform: translateY(4px); transition: transform 0.3s ease;
 }
 .nav-logo:hover .nav-logo-icon-img {
   transform: scale(1.1);
@@ -489,11 +489,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(12px); transition: transform 0.3s ease;
+  transform: translateY(4px); transition: transform 0.3s ease;
 }
 .nav-logo:hover .nav-logo-icon-img {
   transform: scale(1.1);
 }
+
 
 
 
