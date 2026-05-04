@@ -430,36 +430,24 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   text-decoration: none;
 }
 .nav-logo-icon-img {
-  width: 48px;
-  height: 48px;
-  background-color: #ffffff;
-  -webkit-mask-image: url('../images/mountain_final.svg');
-  mask-image: url('../images/mountain_final.svg');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
+  width: 50px;
+  height: auto;
+  display: block;
+  filter: url(#remove-black-filter);
   transition: transform 0.3s ease;
-  mix-blend-mode: normal; /* Disable blend mode, use clean mask */
-  filter: none;
 }
 .nav-logo:hover .nav-logo-icon-img {
-  width: 48px;
-  height: 48px;
-  background-color: #ffffff;
-  -webkit-mask-image: url('../images/mountain_final.svg');
-  mask-image: url('../images/mountain_final.svg');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
+  transform: scale(1.1);
+}
+.nav-logo:hover .nav-logo-icon-img {
+  width: 50px;
+  height: auto;
+  display: block;
+  filter: url(#remove-black-filter);
   transition: transform 0.3s ease;
-  mix-blend-mode: normal; /* Disable blend mode, use clean mask */
-  filter: none;
+}
+.nav-logo:hover .nav-logo-icon-img {
+  transform: scale(1.1);
 }
 .nav-logo-text-part {
   display: flex;
@@ -487,37 +475,26 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-top: 4px;
 }
 .nav-logo:hover .nav-logo-icon-img {
-  width: 48px;
-  height: 48px;
-  background-color: #ffffff;
-  -webkit-mask-image: url('../images/mountain_final.svg');
-  mask-image: url('../images/mountain_final.svg');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
+  width: 50px;
+  height: auto;
+  display: block;
+  filter: url(#remove-black-filter);
   transition: transform 0.3s ease;
-  mix-blend-mode: normal; /* Disable blend mode, use clean mask */
-  filter: none;
 }
 .nav-logo:hover .nav-logo-icon-img {
-  width: 48px;
-  height: 48px;
-  background-color: #ffffff;
-  -webkit-mask-image: url('../images/mountain_final.svg');
-  mask-image: url('../images/mountain_final.svg');
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  mask-position: center;
-  transition: transform 0.3s ease;
-  mix-blend-mode: normal; /* Disable blend mode, use clean mask */
-  filter: none;
+  transform: scale(1.1);
 }
+.nav-logo:hover .nav-logo-icon-img {
+  width: 50px;
+  height: auto;
+  display: block;
+  filter: url(#remove-black-filter);
+  transition: transform 0.3s ease;
+}
+.nav-logo:hover .nav-logo-icon-img {
+  transform: scale(1.1);
+}
+
 
 
 
