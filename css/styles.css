@@ -409,7 +409,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .nav-logo-img-wrapper {
   width: 180px;
   height: 60px;
-  background-color: #ff4500; /* Logonun yeni rengi */
+  background-color: #ffffff; /* Logonun yeni rengi */
   -webkit-mask-image: url('../images/logo.png');
   mask-image: url('../images/logo.png');
   -webkit-mask-size: contain;
@@ -422,5 +422,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .nav-logo:hover .nav-logo-img-wrapper {
   transform: scale(1.05);
-  background-color: #ff5e1a; /* Hover rengi */
+  background-color: #ffffff; opacity: 0.8; /* Hover rengi */
 }
+
