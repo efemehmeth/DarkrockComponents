@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -27,7 +27,10 @@
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="contact.html" class="nav-cta">Get a Quote →</a>
+    <div class="lang-switcher">
+      <button id="lang-switcher-btn" class="lang-switcher-btn"><span>EN</span></button>
+    </div>
+    <a href="contact.html" class="nav-cta" data-i18n="nav-cta">Get a Quote →</a>
     <button class="nav-hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
@@ -48,33 +51,33 @@
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="hero-content">
-    <div class="hero-tag">CNC Precision · 7075-T6 Aluminum · Made in Turkey</div>
+    <div class="hero-tag" data-i18n="hero-tag">CNC Precision · 7075-T6 Aluminum · Made in Turkey</div>
     <h1 class="hero-title">
-      <span class="line">Machined</span>
-      <span class="line accent">Beyond</span>
-      <span class="line outline">Limits.</span>
+      <span class="line" data-i18n="hero-title-machined">Machined</span>
+      <span class="line accent" data-i18n="hero-title-beyond">Beyond</span>
+      <span class="line outline" data-i18n="hero-title-limits">Limits.</span>
     </h1>
-    <p class="hero-sub">Ultra-precision MTB components, hand-finished from aerospace-grade aluminum. Every gram engineered. Every surface machined to tolerance.</p>
+    <p class="hero-sub" data-i18n="hero-sub">Ultra-precision MTB components, hand-finished from aerospace-grade aluminum. Every gram engineered. Every surface machined to tolerance.</p>
     <div class="hero-actions">
-      <a href="products.html" class="btn-primary">View Components ↗</a>
-      <a href="about.html" class="btn-ghost">Our Process</a>
+      <a href="products.html" class="btn-primary" data-i18n="hero-btn-view">View Components ↗</a>
+      <a href="about.html" class="btn-ghost" data-i18n="hero-btn-process">Our Process</a>
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
         <div class="hero-stat-num">±0<span>.01</span></div>
-        <div class="hero-stat-label">mm Tolerance</div>
+        <div class="hero-stat-label" data-i18n="stat-tolerance">mm Tolerance</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-num">7075<span>-T6</span></div>
-        <div class="hero-stat-label">Alloy Grade</div>
+        <div class="hero-stat-label" data-i18n="stat-alloy">Alloy Grade</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-num">100<span>%</span></div>
-        <div class="hero-stat-label">CNC Machined</div>
+        <div class="hero-stat-label" data-i18n="stat-cnc">CNC Machined</div>
       </div>
       <div class="hero-stat">
         <div class="hero-stat-num">0<span>g</span></div>
-        <div class="hero-stat-label">Wasted</div>
+        <div class="hero-stat-label" data-i18n="stat-wasted">Wasted</div>
       </div>
     </div>
   </div>
@@ -102,8 +105,8 @@
 <section class="section">
   <div class="section-inner">
     <div class="section-header reveal">
-      <span class="section-eyebrow">// Featured Components</span>
-      <h2 class="section-title">Built for the <span class="dim">Relentless.</span></h2>
+      <span class="section-eyebrow" data-i18n="section-featured-eyebrow">// Featured Components</span>
+      <h2 class="section-title"><span data-i18n="section-featured-title">Built for the </span><span class="dim" data-i18n="section-featured-title-dim">Relentless.</span></h2>
       <p class="section-sub">Each part machined from a single billet of aircraft-grade aluminum — zero compromises.</p>
     </div>
     <div class="products-grid">
@@ -328,6 +331,8 @@
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
+
