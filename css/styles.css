@@ -434,7 +434,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  margin-right: -10px; /* Pull text into the icon's empty space */
+  margin-right: -25px; /* Pull text into the icon's empty space */
   transform: translateY(8px);
   transition: transform 0.3s ease;
 }
@@ -444,7 +444,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  margin-right: -10px; /* Pull text into the icon's empty space */
+  margin-right: -25px; /* Pull text into the icon's empty space */
   transform: translateY(8px);
   transition: transform 0.3s ease;
 }
@@ -454,7 +454,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  margin-right: -10px; /* Pull text into the icon's empty space */
+  margin-right: -25px; /* Pull text into the icon's empty space */
   transform: translateY(8px);
   transition: transform 0.3s ease;
 }
@@ -464,7 +464,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  margin-right: -10px; /* Pull text into the icon's empty space */
+  margin-right: -25px; /* Pull text into the icon's empty space */
   transform: translateY(8px);
   transition: transform 0.3s ease;
 }
@@ -499,7 +499,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  margin-right: -10px; /* Pull text into the icon's empty space */
+  margin-right: -25px; /* Pull text into the icon's empty space */
   transform: translateY(8px);
   transition: transform 0.3s ease;
 }
@@ -509,7 +509,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  margin-right: -10px; /* Pull text into the icon's empty space */
+  margin-right: -25px; /* Pull text into the icon's empty space */
   transform: translateY(8px);
   transition: transform 0.3s ease;
 }
@@ -519,7 +519,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  margin-right: -10px; /* Pull text into the icon's empty space */
+  margin-right: -25px; /* Pull text into the icon's empty space */
   transform: translateY(8px);
   transition: transform 0.3s ease;
 }
@@ -529,10 +529,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  margin-right: -10px; /* Pull text into the icon's empty space */
+  margin-right: -25px; /* Pull text into the icon's empty space */
   transform: translateY(8px);
   transition: transform 0.3s ease;
 }
+
 
 
 
