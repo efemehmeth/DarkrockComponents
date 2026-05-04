@@ -413,7 +413,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   mask-repeat: no-repeat;
   -webkit-mask-position: center;
   mask-position: center;
-  transform: translateY(8px); transition: transform 0.3s ease;
+  transform: translateY(12px); transition: transform 0.3s ease;
 }
 .nav-logo:hover .nav-logo-img-wrapper {
   transform: scale(1.05);
@@ -430,21 +430,21 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   text-decoration: none;
 }
 .nav-logo-icon-img {
-  width: 100px;
+  width: 130px;
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(8px); transition: transform 0.3s ease;
+  transform: translateY(12px); transition: transform 0.3s ease;
 }
 .nav-logo:hover .nav-logo-icon-img {
   transform: scale(1.1);
 }
 .nav-logo:hover .nav-logo-icon-img {
-  width: 100px;
+  width: 130px;
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(8px); transition: transform 0.3s ease;
+  transform: translateY(12px); transition: transform 0.3s ease;
 }
 .nav-logo:hover .nav-logo-icon-img {
   transform: scale(1.1);
@@ -475,25 +475,26 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   margin-top: 4px;
 }
 .nav-logo:hover .nav-logo-icon-img {
-  width: 100px;
+  width: 130px;
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(8px); transition: transform 0.3s ease;
+  transform: translateY(12px); transition: transform 0.3s ease;
 }
 .nav-logo:hover .nav-logo-icon-img {
   transform: scale(1.1);
 }
 .nav-logo:hover .nav-logo-icon-img {
-  width: 100px;
+  width: 130px;
   height: auto;
   display: block;
   filter: url(#remove-black-filter);
-  transform: translateY(8px); transition: transform 0.3s ease;
+  transform: translateY(12px); transition: transform 0.3s ease;
 }
 .nav-logo:hover .nav-logo-icon-img {
   transform: scale(1.1);
 }
+
 
 
 
