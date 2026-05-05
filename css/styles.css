@@ -56,7 +56,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
 }
-.nav-inner { width: 100%; max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.nav-inner { width: 100%; max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+.nav-right { display: flex; align-items: center; gap: 1.5rem; }
 
 .nav-logo { display: flex; align-items: center; gap: 10px; }
 .nav-logo-icon { width: 36px; height: 36px; }
@@ -372,9 +373,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none; }
-  .nav-inner { justify-content: flex-start; gap: 0; }
-  .nav-actions { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
-  .nav-hamburger { display: flex; margin-left: 0.5rem; }
+  .nav { padding: 0 4%; }
+  .nav-inner { justify-content: space-between; gap: 0; }
+  .nav-right { gap: 0.5rem; }
+  .nav-actions { margin-left: 0; }
+  .nav-hamburger { display: flex; margin-left: 0; }
   .hero-stats { gap: 1.5rem; justify-content: flex-start; flex-wrap: wrap; }
   .hero-stat-num { font-size: 1.8rem; }
   .footer-grid { grid-template-columns: 1fr; }
