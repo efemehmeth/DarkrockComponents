@@ -60,7 +60,7 @@ const translations = {
     tr: {
         "nav-home": "Anasayfa", "nav-products": "Ürünler", "nav-about": "Hakkımızda", "nav-contact": "İletişim", "nav-cta": "Teklif Al →",
         "hero-tag": "Hassas CNC İşleme · 7075-T6 Alüminyum · Yerel Mühendislik",
-        "hero-title-machined": "Performans", "hero-title-beyond": "için", "hero-title-limits": "Tasarlanmış.",
+        "hero-title-machined": "Performans", "hero-title-beyond": "için", "hero-title-limits": "Tasarlandı.",
         "hero-sub": "Havacılık standartlarında alüminyumdan üretilen, her bir gramı performans odaklı tasarlanmış MTB bileşenleri. Biz sadece parça üretmiyoruz, en iyi sürüş deneyimini tasarlıyoruz.",
         "hero-btn-view": "Ürünleri İncele ↗", "hero-btn-process": "Standartlarımız",
         "stat-tolerance": "mm Hassasiyet", "stat-alloy": "Alaşım Kalitesi", "stat-cnc": "5-Eksen CNC", "stat-wasted": "Atık",
