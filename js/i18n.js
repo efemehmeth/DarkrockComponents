@@ -170,11 +170,33 @@ const translations = {
     }
 };
 let currentLang = localStorage.getItem('darkrock_lang') || 'en';
-function setLanguage(lang) {
-    currentLang = lang; localStorage.setItem('darkrock_lang', lang); document.documentElement.lang = lang;
-    document.querySelectorAll('[data-i18n]').forEach(el => {
+function setLanguage(lang, animate = true) {
+    currentLang = lang;
+    localStorage.setItem('darkrock_lang', lang);
+    document.documentElement.lang = lang;
+    
+    const elements = document.querySelectorAll('[data-i18n]');
+    
+    if (animate) {
+        elements.forEach(el => el.classList.add('i18n-changing'));
+        
+        setTimeout(() => {
+            updateTextContent(lang, elements);
+            
+            // Küçük bir gecikme ile sınıfı kaldırarak tarayıcının değişikliği fark etmesini sağlıyoruz
+            setTimeout(() => {
+                elements.forEach(el => el.classList.remove('i18n-changing'));
+            }, 50);
+        }, 200);
+    } else {
+        updateTextContent(lang, elements);
+    }
+}
+
+function updateTextContent(lang, elements) {
+    elements.forEach(el => {
         const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) {
+        if (translations[lang] && translations[lang][key]) {
             if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
                 el.placeholder = translations[lang][key];
             } else {
@@ -183,15 +205,26 @@ function setLanguage(lang) {
         }
     });
     const langBtn = document.getElementById('lang-switcher-btn');
-    if (langBtn) langBtn.innerHTML = `<span>${translations[lang]['lang-name']}</span>`;
+    if (langBtn) {
+        langBtn.innerHTML = `<span>${translations[lang]['lang-name']}</span>`;
+    }
 }
+
 function cycleLanguage() {
     const langs = ['en', 'tr', 'de'];
     let idx = (langs.indexOf(currentLang) + 1) % langs.length;
-    setLanguage(langs[idx]);
+    setLanguage(langs[idx], true);
 }
+
 document.addEventListener('DOMContentLoaded', () => {
-    setLanguage(currentLang);
+    // İlk yüklemede animasyonsuz set ediyoruz
+    setLanguage(currentLang, false);
+    
     const langBtn = document.getElementById('lang-switcher-btn');
-    if (langBtn) langBtn.addEventListener('click', (e) => { e.preventDefault(); cycleLanguage(); });
+    if (langBtn) {
+        langBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            cycleLanguage();
+        });
+    }
 });
