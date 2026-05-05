@@ -267,8 +267,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   border-radius: var(--radius); text-align: center;
   font-family: 'Outfit', sans-serif;
 }
-.about-badge-num { font-size: 2.5rem; font-weight: 900; display: block; }
-.about-badge-label { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.9; }
+.about-badge-num { font-size: 1.8rem; font-weight: 900; display: block; line-height: 1.2; margin-bottom: 5px; }
+.about-badge-label { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; opacity: 1; }
 
 .about-content { padding: 2rem 0; }
 .about-content p { font-size: 1rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; }
