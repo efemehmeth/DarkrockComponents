@@ -81,7 +81,7 @@ const translations = {
         "about-btn": "Vizyonumuz →",
         "cta-title": "Kusursuz sürüşe<br><span style='color:var(--accent)'>hazır mısın?</span>", "cta-sub": "Özel projeler, teknik detaylar veya erişim kolaylığı için bizimle iletişime geçin.",
         "cta-btn-contact": "Fikirlerini Paylaş →", "cta-btn-browse": "Parçalara Göz At",
-        "badge-num": "YÜZDE YÜZ", "badge-label": "YERLİ ÜRETİM",
+        "badge-num": "%100", "badge-label": "Yerli Tasarım ve Üretim",
         "footer-desc": "Hassas mühendislik ürünü MTB bileşenleri. Sürüşten doğdu, performans için üretildi.", "footer-made-in": "Yerel Üretim", "footer-rights": "Tüm hakları saklıdır.", "footer-col-components": "Ürünler", "footer-col-company": "Şirket", "footer-col-info": "Destek",
         "lang-name": "TR",
         "products-hero-title": "Ürünlerimiz.", "products-hero-sub": "Performans için optimize edilmiş, 7075-T6 alüminyumdan işlenmiş her bir parça.",
