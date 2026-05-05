@@ -372,7 +372,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 @media (max-width: 768px) {
   .nav-links, .nav-cta { display: none; }
-  .nav-inner { justify-content: space-between; }
+  .nav-inner { justify-content: flex-start; gap: 0; }
   .nav-actions { display: flex; align-items: center; gap: 0.5rem; margin-left: auto; }
   .nav-hamburger { display: flex; margin-left: 0.5rem; }
   .hero-stats { gap: 1.5rem; justify-content: flex-start; flex-wrap: wrap; }
