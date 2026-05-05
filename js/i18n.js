@@ -1,3 +1,4 @@
+const translations = {
     en: {
         "nav-home": "Home", "nav-products": "Products", "nav-about": "About", "nav-contact": "Contact", "nav-cta": "Get a Quote →",
         "hero-tag": "Precision CNC Machining · 7075-T6 Aluminum · Local Engineering",
