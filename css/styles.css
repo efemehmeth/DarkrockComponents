@@ -117,7 +117,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 @media (max-width: 768px) {
-  .lang-switcher { margin-left: 0; margin-right: 1rem; }
+  .lang-switcher { margin-left: 0; }
 }
 
 /* ─── HERO ─── */
@@ -372,12 +372,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
 }
 @media (max-width: 768px) {
-  .nav-links, .nav-cta { display: none; }
-  .nav { padding: 0 4%; }
-  .nav-inner { justify-content: space-between; gap: 0; }
-  .nav-right { gap: 0.5rem; }
-  .nav-actions { margin-left: 0; }
-  .nav-hamburger { display: flex; margin-left: 0; }
+  .nav-links, .nav-cta { display: none !important; }
+  .nav { padding: 0 10px !important; }
+  .nav-inner { display: flex !important; justify-content: space-between !important; gap: 0 !important; }
+  .nav-right { display: flex !important; align-items: center !important; gap: 0.4rem !important; margin-left: auto !important; }
+  .nav-actions { margin: 0 !important; }
+  .nav-hamburger { display: flex !important; margin: 0 !important; }
   .hero-stats { gap: 1.5rem; justify-content: flex-start; flex-wrap: wrap; }
   .hero-stat-num { font-size: 1.8rem; }
   .footer-grid { grid-template-columns: 1fr; }
@@ -388,9 +388,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 @media (max-width: 480px) {
   :root { --nav-height: 64px; }
-  .nav { padding: 0 12px; }
-  .nav-inner { gap: 0.5rem; }
+  .nav-logo-icon-img { width: 90px !important; margin-right: -8px !important; transform: translateY(6px) !important; }
+  .nav-logo-name { font-size: 15px !important; }
+  .nav-logo-sub { display: block !important; font-size: 6px !important; letter-spacing: 0.25em !important; margin-top: 2px !important; }
   .hero-content { padding: 6rem 0 4rem; }
+}
   .hero-actions { flex-direction: column; align-items: stretch; gap: 1rem; }
   .btn-primary, .btn-ghost { justify-content: center; width: 100%; }
   .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
