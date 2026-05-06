@@ -33,7 +33,7 @@ const translations = {
     "product-tag-new": "New", "product-tag-pro": "Pro", "product-price-contact": "Contact for Price",
     "spec-steerer": "Steerer", "spec-mount": "Mount", "spec-weight": "Weight", "spec-width": "Width", "spec-clamp": "Clamp", "spec-length": "Length", "spec-rise": "Rise", "spec-diameter": "Diameter", "spec-offset": "Offset",
     "product-gyro-name": "DR-G1 Hydraulic Gyro System", "product-gyro-desc": "Full-rotation gyro brake system. Sealed ABEC-7 bearings. Compatible with all cable disc and rim brakes.",
-    "product-handlebar-name": "DR-01 Handlebar", "product-handlebar-desc": "Tapered wall 7075-T6 bar with precision-machined clamping zones. Enduro-spec geometry.",
+    "product-handlebar-name": "DR-DIRECT MOUNT-S1", "product-handlebar-desc": "2-piece direct mount stem machined from 7075-T6. Maximum stiffness, minimum weight.",
     "product-stem-name": "DR-S1 Stem", "product-stem-desc": "4-bolt CNC-pocketed stem. Lightweight without sacrificing strength.",
     "product-seatpost-name": "DR-P1 Seatpost", "product-seatpost-desc": "Billet seatpost with dual-bolt clamp for rock-solid saddle stability.",
 
@@ -130,7 +130,7 @@ const translations = {
     "product-tag-new": "Yeni", "product-tag-pro": "Pro", "product-price-contact": "Fiyat İçin İletişime Geçin",
     "spec-steerer": "Şaft", "spec-mount": "Montaj", "spec-weight": "Ağırlık", "spec-width": "Genişlik", "spec-clamp": "Kelepçe", "spec-length": "Uzunluk", "spec-rise": "Rise", "spec-diameter": "Çap", "spec-offset": "Ofset",
     "product-gyro-name": "DR-G1 Hidrolik Gyro Sistemi", "product-gyro-desc": "Sınırsız dönüş özgürlüğü. En pürüzsüz çalışma için mühürlü ABEC-7 rulmanlar.",
-    "product-handlebar-name": "DR-01 Gidon", "product-handlebar-desc": "Hassas işlenmiş sıkma bölgelerine sahip 7075-T6 gidon. Enduro geometrisi.",
+    "product-handlebar-name": "DR-DIRECT MOUNT-S1", "product-handlebar-desc": "7075-T6'dan işlenmiş 2 parçalı direct mount boğaz. Maksimum sertlik, minimum ağırlık.",
     "product-stem-name": "DR-S1 Boğaz", "product-stem-desc": "CNC işlemeli boğaz. Mukavemetten ödün vermeyen hafif yapı.",
     "product-seatpost-name": "DR-P1 Sele Borusu", "product-seatpost-desc": "Kusursuz sele stabilitesi için kütükten işlenmiş sele borusu.",
 
@@ -227,7 +227,7 @@ const translations = {
     "product-tag-new": "Neu", "product-tag-pro": "Pro", "product-price-contact": "Preis auf Anfrage",
     "spec-steerer": "Schaft", "spec-mount": "Montage", "spec-weight": "Gewicht", "spec-width": "Breite", "spec-clamp": "Klemmung", "spec-length": "Länge", "spec-rise": "Rise", "spec-diameter": "Durchmesser", "spec-offset": "Offset",
     "product-gyro-name": "DR-G1 Hydraulik-Gyro", "product-gyro-desc": "360° Rotationsfreiheit. ABEC-7 Lager für geschmeidige Performance.",
-    "product-handlebar-name": "DR-01 Lenker", "product-handlebar-desc": "7075-T6 Lenker mit präzisionsgefrästen Klemmbereichen. Enduro-Geometrie.",
+    "product-handlebar-name": "DR-DIRECT MOUNT-S1", "product-handlebar-desc": "2-teiliger Direct Mount Vorbau aus 7075-T6. Maximale Steifigkeit, minimales Gewicht.",
     "product-stem-name": "DR-S1 Vorbau", "product-stem-desc": "CNC-gefräster Vorbau. Leichtgewicht ohne Stabilitätsverlust.",
     "product-seatpost-name": "DR-P1 Sattelstütze", "product-seatpost-desc": "Gefräste Sattelstütze mit Doppelschrauben-Klemmung.",
 
