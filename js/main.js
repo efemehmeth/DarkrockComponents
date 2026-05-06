@@ -51,7 +51,7 @@ const heroBg = document.querySelector('.hero-bg');
 if (heroBg) {
   window.addEventListener('scroll', () => {
     const y = window.scrollY;
-    heroBg.style.transform = `scale(1) translateY(${y * 0.3}px)`;
+    heroBg.style.transform = `scale(1.05) translateY(${y * 0.3}px)`;
   }, { passive: true });
 }
 
