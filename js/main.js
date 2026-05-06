@@ -54,3 +54,40 @@ if (heroBg) {
     heroBg.style.transform = `scale(1.05) translateY(${y * 0.3}px)`;
   }, { passive: true });
 }
+
+// ─── PRODUCT SLIDERS ───
+function initSliders() {
+  document.querySelectorAll('.product-slider').forEach(slider => {
+    const track = slider.querySelector('.slider-track');
+    const dots = slider.querySelectorAll('.slider-dot');
+    const images = track.querySelectorAll('img');
+    let currentIndex = 0;
+    
+    if (!track || dots.length <= 1) return;
+
+    function goToSlide(index) {
+      track.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+      currentIndex = index;
+    }
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', (e) => {
+        e.preventDefault(); 
+        e.stopPropagation();
+        goToSlide(index);
+      });
+    });
+
+    // Tap on image to go to next slide
+    track.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      let nextIndex = (currentIndex + 1) % images.length;
+      goToSlide(nextIndex);
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initSliders);
