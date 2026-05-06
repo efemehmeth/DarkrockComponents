@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products — DarkRock Components</title>
-  <meta name="description" content="Browse DarkRock's full range of CNC machined mountain bike components. Handlebars, stems, seatposts, gyro systems — all machined from 7075-T6 aluminum.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙</text></svg>">
+  <meta name="description"
+    content="Browse DarkRock's full range of CNC machined mountain bike components. Handlebars, stems, seatposts, gyro systems — all machined from 7075-T6 aluminum.">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙</text></svg>">
   <link rel="stylesheet" href="css/styles.css">
   <style>
     .products-page-hero {
@@ -13,254 +16,375 @@
       background: var(--bg-secondary);
       border-bottom: 1px solid var(--border);
     }
-    .products-page-hero-inner { max-width: 1400px; margin: 0 auto; }
+
+    .products-page-hero-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
     .filter-bar {
-      display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 3rem;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
     }
+
     .filter-btn {
-      padding: 8px 20px; font-family: 'Outfit', sans-serif;
-      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
-      border: 1px solid var(--border); color: var(--text-muted); border-radius: 2px;
-      transition: var(--transition); cursor: pointer; background: none;
+      padding: 8px 20px;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      border-radius: 2px;
+      transition: var(--transition);
+      cursor: pointer;
+      background: none;
     }
-    .filter-btn:hover, .filter-btn.active {
-      border-color: var(--accent); color: var(--accent); background: var(--accent-dim);
+
+    .filter-btn:hover,
+    .filter-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-dim);
     }
-    .product-item { display: none; }
-    .product-item.show { display: flex; }
+
+    .product-item {
+      display: none;
+    }
+
+    .product-item.show {
+      display: flex;
+    }
+
     .custom-cta {
       grid-column: 1 / -1;
       background: linear-gradient(135deg, #1a0800, #0d0d0d);
       border: 1px dashed var(--border-accent);
-      padding: 3rem; text-align: center; display: flex;
-      flex-direction: column; align-items: center; justify-content: center; gap: 1rem;
+      padding: 3rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
     }
-    .custom-cta h3 { font-size: 1.5rem; }
-    .custom-cta p { color: var(--text-secondary); font-size: 0.9rem; }
+
+    .custom-cta h3 {
+      font-size: 1.5rem;
+    }
+
+    .custom-cta p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
   </style>
 </head>
+
 <body>
-<svg style="position: absolute; width: 0; height: 0;" aria-hidden="true" focusable="false">
-  <filter id="remove-black-filter">
-    <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  1 1 1 0 0" />
-  </filter>
-</svg>
+  <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true" focusable="false">
+    <filter id="remove-black-filter">
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  1 1 1 0 0" />
+    </filter>
+  </svg>
 
-<!-- NAV -->
-<nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <img src="images/mountain_icon_v2.png" class="nav-logo-icon-img" alt="Logo">
-      <div class="nav-logo-text-part">
-        <div class="nav-logo-name">DARK<span>ROCK</span></div>
-        <div class="nav-logo-sub">COMPONENTS</div>
-      </div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
-      <li><a href="products.html" class="active" data-i18n="nav-products">Products</a></li>
-      <li><a href="about.html" data-i18n="nav-about">About</a></li>
-      <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
-    </ul>
-    <div class="nav-right">
-      <div class="nav-actions">
-        <div class="lang-switcher">
-          <button id="lang-switcher-btn" class="lang-switcher-btn"><span>EN</span></button>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/mountain_icon_v2.png" class="nav-logo-icon-img" alt="Logo">
+        <div class="nav-logo-text-part">
+          <div class="nav-logo-name">DARK<span>ROCK</span></div>
+          <div class="nav-logo-sub">COMPONENTS</div>
         </div>
-        <a href="contact.html" class="nav-cta" data-i18n="nav-cta">Get a Quote →</a>
-      </div>
-      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-menu-close" id="mobileClose">✕</button>
-  <a href="index.html" data-i18n="nav-home">Home</a>
-  <a href="products.html" data-i18n="nav-products">Products</a>
-  <a href="about.html" data-i18n="nav-about">About</a>
-  <a href="contact.html" data-i18n="nav-contact">Contact</a>
-  <a href="contact.html" style="color:var(--accent)" data-i18n="nav-cta">Get a Quote →</a>
-</div>
-
-<!-- PAGE HERO -->
-<div class="products-page-hero">
-  <div class="products-page-hero-inner">
-    <span class="section-eyebrow" data-i18n="nav-products">// All Components</span>
-    <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,4rem); margin-bottom:1rem;" data-i18n="products-hero-title">The Full Lineup.</h1>
-    <p style="color:var(--text-secondary); max-width:500px; margin-bottom:0;" data-i18n="products-hero-sub">Every part machined to order from 7075-T6 aluminium. Contact for pricing and availability.</p>
-  </div>
-</div>
-
-<!-- PRODUCTS -->
-<section class="section">
-  <div class="section-inner">
-    <!-- FILTER -->
-    <div class="filter-bar" id="filterBar">
-      <button class="filter-btn active" data-filter="all" data-i18n="filter-all">All</button>
-      <button class="filter-btn" data-filter="cockpit" data-i18n="product-category-cockpit">Cockpit</button>
-      <button class="filter-btn" data-filter="saddle" data-i18n="product-category-saddle">Saddle System</button>
-      <button class="filter-btn" data-filter="brake" data-i18n="product-category-brake">Brake System</button>
-      <button class="filter-btn" data-filter="custom" data-i18n="filter-custom">Custom</button>
-    </div>
-
-    <div class="products-grid" id="productsGrid">
-      <!-- GYRO -->
-      <article class="product-card product-item show reveal" data-category="brake" id="gyro">
-        <span class="product-card-tag new" data-i18n="product-tag-new">New</span>
-        <div class="product-img-wrap">
-          <img src="images/product_gyro.png" alt="DR-G1 Hydraulic Gyro System">
-        </div>
-        <div class="product-card-body">
-          <span class="product-category" data-i18n="product-category-brake">Brake System</span>
-          <h2 class="product-name" data-i18n="product-gyro-name">DR-G1 Hydraulic Gyro System</h2>
-          <p class="product-desc" data-i18n="product-gyro-desc">Full 360° rotation gyro brake system. Sealed ABEC-7 bearings. Compatible with all cable disc and rim brakes.</p>
-          <div class="product-specs">
-            <div class="product-spec"><div class="product-spec-val">1-1/8"</div><div class="product-spec-key" data-i18n="spec-steerer">Steerer</div></div>
-            <div class="product-spec"><div class="product-spec-val">2-bolt</div><div class="product-spec-key" data-i18n="spec-mount">Mount</div></div>
-            <div class="product-spec"><div class="product-spec-val">78g</div><div class="product-spec-key" data-i18n="spec-weight">Weight</div></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+        <li><a href="products.html" class="active" data-i18n="nav-products">Products</a></li>
+        <li><a href="about.html" data-i18n="nav-about">About</a></li>
+        <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="nav-actions">
+          <div class="lang-switcher">
+            <button id="lang-switcher-btn" class="lang-switcher-btn"><span>EN</span></button>
           </div>
+          <a href="contact.html" class="nav-cta" data-i18n="nav-cta">Get a Quote →</a>
         </div>
-        <div class="product-card-foot">
-          <div class="product-price" data-i18n="product-price-contact">Contact for Price</div>
-          <a href="contact.html?product=dr-g1-hydraulic-gyro" class="product-btn" data-i18n="product-inquire">Inquire →</a>
-        </div>
-      </article>
-      <!-- STEM -->
-      <article class="product-card product-item show reveal" data-category="cockpit" id="stems">
-        <div class="product-img-wrap logo-hide product-slider">
-          <div class="slider-track">
-            <img src="images/product_stem_1.png" alt="DR-S1 Stem" loading="lazy">
-            <img src="images/product_stem_2.png" alt="DR-S1 Stem" loading="lazy">
-            <img src="images/product_stem_3.png" alt="DR-S1 Stem" loading="lazy">
-          </div>
-          <div class="slider-dots">
-            <div class="slider-dot active"></div>
-            <div class="slider-dot"></div>
-            <div class="slider-dot"></div>
-          </div>
-        </div>
-        <div class="product-card-body">
-          <span class="product-category" data-i18n="product-category-cockpit">Cockpit</span>
-          <h2 class="product-name" data-i18n="product-stem-name">DR-S1 Stem</h2>
-          <p class="product-desc" data-i18n="product-stem-desc">4-bolt CNC-pocketed stem. Available in 40/50/60mm. 31.8mm and 35mm clamp diameters.</p>
-          <div class="product-specs">
-            <div class="product-spec"><div class="product-spec-val">50mm</div><div class="product-spec-key" data-i18n="spec-length">Length</div></div>
-            <div class="product-spec"><div class="product-spec-val">35mm</div><div class="product-spec-key" data-i18n="spec-clamp">Clamp</div></div>
-            <div class="product-spec"><div class="product-spec-val">108g</div><div class="product-spec-key" data-i18n="spec-weight">Weight</div></div>
-            <div class="product-spec"><div class="product-spec-val">0°</div><div class="product-spec-key" data-i18n="spec-rise">Rise</div></div>
-          </div>
-        </div>
-        <div class="product-card-foot">
-          <div class="product-price" data-i18n="product-price-contact">Contact for Price</div>
-          <a href="contact.html?product=dr-s1-stem" class="product-btn" data-i18n="product-inquire">Inquire →</a>
-        </div>
-      </article>
-
-      <!-- DR-DIRECT MOUNT-S1 -->
-      <article class="product-card product-item show reveal" data-category="cockpit" id="directmount">
-        <span class="product-card-tag new" data-i18n="product-tag-new">New</span>
-        <div class="product-img-wrap" style="overflow: hidden;">
-          <!-- Using CSS scale/translate to crop the watermark if present -->
-          <img src="images/product_direct_mount_s1.png" alt="DR-DIRECT MOUNT-S1" style="transform: scale(1.05) translateY(-2%);">
-        </div>
-        <div class="product-card-body">
-          <span class="product-category" data-i18n="product-category-cockpit">Cockpit</span>
-          <h2 class="product-name" data-i18n="product-handlebar-name">DR-DIRECT MOUNT-S1</h2>
-          <p class="product-desc" data-i18n="product-handlebar-desc">2-piece direct mount stem machined from 7075-T6. Maximum stiffness, minimum weight.</p>
-          <div class="product-specs">
-            <div class="product-spec"><div class="product-spec-val">BoXXer/Fox40</div><div class="product-spec-key" data-i18n="spec-mount">Mount</div></div>
-            <div class="product-spec"><div class="product-spec-val">31.8 / 35mm</div><div class="product-spec-key" data-i18n="spec-clamp">Clamp</div></div>
-            <div class="product-spec"><div class="product-spec-val">135g</div><div class="product-spec-key" data-i18n="spec-weight">Weight</div></div>
-            <div class="product-spec"><div class="product-spec-val">45mm</div><div class="product-spec-key" data-i18n="spec-length">Length</div></div>
-          </div>
-        </div>
-        <div class="product-card-foot">
-          <div class="product-price" data-i18n="product-price-contact">Contact for Price</div>
-          <a href="contact.html?product=dr-direct-mount-s1" class="product-btn" data-i18n="product-inquire">Inquire →</a>
-        </div>
-      </article>
-
-      <!-- SEATPOST -->
-      <article class="product-card product-item show reveal" data-category="saddle" id="seatposts">
-        <span class="product-card-tag" data-i18n="product-tag-pro">Pro</span>
-        <div class="product-img-wrap">
-          <img src="images/product_seatpost.png" alt="DR-P1 Seatpost">
-        </div>
-        <div class="product-card-body">
-          <span class="product-category" data-i18n="product-category-saddle">Saddle System</span>
-          <h2 class="product-name" data-i18n="product-seatpost-name">DR-P1 Seatpost</h2>
-          <p class="product-desc" data-i18n="product-seatpost-desc">Straight-gauge billet post with dual-bolt saddle clamp. Rails 7×7mm or 7×9mm. Multiple lengths.</p>
-          <div class="product-specs">
-            <div class="product-spec"><div class="product-spec-val">350mm</div><div class="product-spec-key" data-i18n="spec-length">Length</div></div>
-            <div class="product-spec"><div class="product-spec-val">31.6mm</div><div class="product-spec-key" data-i18n="spec-diameter">Diameter</div></div>
-            <div class="product-spec"><div class="product-spec-val">215g</div><div class="product-spec-key" data-i18n="spec-weight">Weight</div></div>
-            <div class="product-spec"><div class="product-spec-val">±15mm</div><div class="product-spec-key" data-i18n="spec-offset">Offset</div></div>
-          </div>
-        </div>
-        <div class="product-card-foot">
-          <div class="product-price" data-i18n="product-price-contact">Contact for Price</div>
-          <a href="contact.html?product=dr-p1-seatpost" class="product-btn" data-i18n="product-inquire">Inquire →</a>
-        </div>
-      </article>
-
-      
-
-      <!-- CUSTOM CTA -->
-      <div class="custom-cta product-item show reveal" data-category="custom" id="custom">
-        <span style="font-size:2.5rem;">⚙️</span>
-        <h3 data-i18n="custom-cta-title">Custom Components</h3>
-        <p data-i18n="custom-cta-desc">Don't see what you need? I machine custom parts to your spec — DXF/STEP files welcome. Let's build something new.</p>
-        <a href="contact.html?product=custom" class="btn-primary" data-i18n="btn-start-custom">Start a Custom Order →</a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="mobileClose">✕</button>
+    <a href="index.html" data-i18n="nav-home">Home</a>
+    <a href="products.html" data-i18n="nav-products">Products</a>
+    <a href="about.html" data-i18n="nav-about">About</a>
+    <a href="contact.html" data-i18n="nav-contact">Contact</a>
+    <a href="contact.html" style="color:var(--accent)" data-i18n="nav-cta">Get a Quote →</a>
   </div>
-</section>
 
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-bottom" style="padding-top:0; border-top:none;">
-      <p>© 2025 DarkRock Components. <span data-i18n="footer-rights">All rights reserved.</span></p>
-      <div class="footer-badge" data-i18n="footer-made-in">Made in Turkey</div>
+  <!-- PAGE HERO -->
+  <div class="products-page-hero">
+    <div class="products-page-hero-inner">
+      <span class="section-eyebrow" data-i18n="nav-products">// All Components</span>
+      <h1 class="section-title" style="font-size:clamp(2.5rem,5vw,4rem); margin-bottom:1rem;"
+        data-i18n="products-hero-title">The Full Lineup.</h1>
+      <p style="color:var(--text-secondary); max-width:500px; margin-bottom:0;" data-i18n="products-hero-sub">Every part
+        machined to order from 7075-T6 aluminium. Contact for pricing and availability.</p>
     </div>
   </div>
-</footer>
 
-<script src="js/i18n.js"></script><script src="js/main.js"></script>
-<script>
-  // Filter logic
-  const filterBtns = document.querySelectorAll('.filter-btn');
-  const items = document.querySelectorAll('.product-item');
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      items.forEach(item => {
-        const cat = item.dataset.category;
-        const show = filter === 'all' || cat === filter;
-        item.classList.toggle('show', show);
-        item.style.display = show ? '' : 'none';
+  <!-- PRODUCTS -->
+  <section class="section">
+    <div class="section-inner">
+      <!-- FILTER -->
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-filter="all" data-i18n="filter-all">All</button>
+        <button class="filter-btn" data-filter="cockpit" data-i18n="product-category-cockpit">Cockpit</button>
+        <button class="filter-btn" data-filter="saddle" data-i18n="product-category-saddle">Saddle System</button>
+        <button class="filter-btn" data-filter="brake" data-i18n="product-category-brake">Brake System</button>
+        <button class="filter-btn" data-filter="custom" data-i18n="filter-custom">Custom</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- GYRO -->
+        <article class="product-card product-item show reveal" data-category="brake" id="gyro">
+          <span class="product-card-tag new" data-i18n="product-tag-new">New</span>
+          <div class="product-img-wrap">
+            <img src="images/product_gyro.png" alt="DR-G1 Hydraulic Gyro System">
+          </div>
+          <div class="product-card-body">
+            <span class="product-category" data-i18n="product-category-brake">Brake System</span>
+            <h2 class="product-name" data-i18n="product-gyro-name">DR-G1 Hydraulic Gyro System</h2>
+            <p class="product-desc" data-i18n="product-gyro-desc">Full 360° rotation gyro brake system. Sealed ABEC-7
+              bearings. Compatible with all cable disc and rim brakes.</p>
+            <div class="product-specs">
+              <div class="product-spec">
+                <div class="product-spec-val">1-1/8"</div>
+                <div class="product-spec-key" data-i18n="spec-steerer">Steerer</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">2-bolt</div>
+                <div class="product-spec-key" data-i18n="spec-mount">Mount</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">78g</div>
+                <div class="product-spec-key" data-i18n="spec-weight">Weight</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card-foot">
+            <div class="product-price" data-i18n="product-price-contact">Contact for Price</div>
+            <a href="contact.html?product=dr-g1-hydraulic-gyro" class="product-btn" data-i18n="product-inquire">Inquire
+              →</a>
+          </div>
+        </article>
+        <!-- DR-DIRECT MOUNT-S1 -->
+        <article class="product-card product-item show reveal" data-category="cockpit" id="directmount">
+          <span class="product-card-tag new" data-i18n="product-tag-new">New</span>
+          <div class="product-img-wrap" style="overflow: hidden;">
+            <!-- Using CSS scale/translate to crop the watermark if present -->
+            <img src="images/product_direct_mount_s1.png" alt="DR-DIRECT MOUNT-S1"
+              style="transform: scale(1.05) translateY(-2%);">
+          </div>
+          <div class="product-card-body">
+            <span class="product-category" data-i18n="product-category-cockpit">Cockpit</span>
+            <h2 class="product-name" data-i18n="product-handlebar-name">DR-DIRECT MOUNT-S1</h2>
+            <p class="product-desc" data-i18n="product-handlebar-desc">2-piece direct mount stem machined from 7075-T6.
+              Maximum stiffness, minimum weight.</p>
+            <div class="product-specs">
+              <div class="product-spec">
+                <div class="product-spec-val">BoXXer/Fox40</div>
+                <div class="product-spec-key" data-i18n="spec-mount">Mount</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">31.8 / 35mm</div>
+                <div class="product-spec-key" data-i18n="spec-clamp">Clamp</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">135g</div>
+                <div class="product-spec-key" data-i18n="spec-weight">Weight</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">45mm</div>
+                <div class="product-spec-key" data-i18n="spec-length">Length</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card-foot">
+            <div class="product-price" data-i18n="product-price-contact">Contact for Price</div>
+            <a href="contact.html?product=dr-direct-mount-s1" class="product-btn" data-i18n="product-inquire">Inquire
+              →</a>
+          </div>
+        </article>
+        <!-- STEM -->
+        <article class="product-card product-item show reveal" data-category="cockpit" id="stems">
+          <div class="product-img-wrap logo-hide product-slider">
+            <div class="slider-track">
+              <img src="images/product_stem_1.png" alt="DR-S1 Stem" loading="lazy">
+              <img src="images/product_stem_2.png" alt="DR-S1 Stem" loading="lazy">
+              <img src="images/product_stem_3.png" alt="DR-S1 Stem" loading="lazy">
+            </div>
+            <div class="slider-dots">
+              <div class="slider-dot active"></div>
+              <div class="slider-dot"></div>
+              <div class="slider-dot"></div>
+            </div>
+          </div>
+          <div class="product-card-body">
+            <span class="product-category" data-i18n="product-category-cockpit">Cockpit</span>
+            <h2 class="product-name" data-i18n="product-stem-name">DR-S1 Stem</h2>
+            <p class="product-desc" data-i18n="product-stem-desc">4-bolt CNC-pocketed stem. Available in 40/50/60mm.
+              31.8mm and 35mm clamp diameters.</p>
+            <div class="product-specs">
+              <div class="product-spec">
+                <div class="product-spec-val">50mm</div>
+                <div class="product-spec-key" data-i18n="spec-length">Length</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">35mm</div>
+                <div class="product-spec-key" data-i18n="spec-clamp">Clamp</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">108g</div>
+                <div class="product-spec-key" data-i18n="spec-weight">Weight</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">0°</div>
+                <div class="product-spec-key" data-i18n="spec-rise">Rise</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card-foot">
+            <div class="product-price" data-i18n="product-price-contact">Contact for Price</div>
+            <a href="contact.html?product=dr-s1-stem" class="product-btn" data-i18n="product-inquire">Inquire →</a>
+          </div>
+        </article>
+
+        <!-- DR-DIRECT MOUNT-S1 -->
+        <article class="product-card product-item show reveal" data-category="cockpit" id="directmount">
+          <span class="product-card-tag new" data-i18n="product-tag-new">New</span>
+          <div class="product-img-wrap" style="overflow: hidden;">
+            <!-- Using CSS scale/translate to crop the watermark if present -->
+            <img src="images/product_direct_mount_s1.png" alt="DR-DIRECT MOUNT-S1"
+              style="transform: scale(1.05) translateY(-2%);">
+          </div>
+          <div class="product-card-body">
+            <span class="product-category" data-i18n="product-category-cockpit">Cockpit</span>
+            <h2 class="product-name" data-i18n="product-handlebar-name">DR-DIRECT MOUNT-S1</h2>
+            <p class="product-desc" data-i18n="product-handlebar-desc">2-piece direct mount stem machined from 7075-T6.
+              Maximum stiffness, minimum weight.</p>
+            <div class="product-specs">
+              <div class="product-spec">
+                <div class="product-spec-val">BoXXer/Fox40</div>
+                <div class="product-spec-key" data-i18n="spec-mount">Mount</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">31.8 / 35mm</div>
+                <div class="product-spec-key" data-i18n="spec-clamp">Clamp</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">135g</div>
+                <div class="product-spec-key" data-i18n="spec-weight">Weight</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">45mm</div>
+                <div class="product-spec-key" data-i18n="spec-length">Length</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card-foot">
+            <div class="product-price" data-i18n="product-price-contact">Contact for Price</div>
+            <a href="contact.html?product=dr-direct-mount-s1" class="product-btn" data-i18n="product-inquire">Inquire
+              →</a>
+          </div>
+        </article>
+
+        <!-- SEATPOST -->
+        <article class="product-card product-item show reveal" data-category="saddle" id="seatposts">
+          <span class="product-card-tag" data-i18n="product-tag-pro">Pro</span>
+          <div class="product-img-wrap">
+            <img src="images/product_seatpost.png" alt="DR-P1 Seatpost">
+          </div>
+          <div class="product-card-body">
+            <span class="product-category" data-i18n="product-category-saddle">Saddle System</span>
+            <h2 class="product-name" data-i18n="product-seatpost-name">DR-P1 Seatpost</h2>
+            <p class="product-desc" data-i18n="product-seatpost-desc">Straight-gauge billet post with dual-bolt saddle
+              clamp. Rails 7×7mm or 7×9mm. Multiple lengths.</p>
+            <div class="product-specs">
+              <div class="product-spec">
+                <div class="product-spec-val">350mm</div>
+                <div class="product-spec-key" data-i18n="spec-length">Length</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">31.6mm</div>
+                <div class="product-spec-key" data-i18n="spec-diameter">Diameter</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">215g</div>
+                <div class="product-spec-key" data-i18n="spec-weight">Weight</div>
+              </div>
+              <div class="product-spec">
+                <div class="product-spec-val">±15mm</div>
+                <div class="product-spec-key" data-i18n="spec-offset">Offset</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card-foot">
+            <div class="product-price" data-i18n="product-price-contact">Contact for Price</div>
+            <a href="contact.html?product=dr-p1-seatpost" class="product-btn" data-i18n="product-inquire">Inquire →</a>
+          </div>
+        </article>
+
+
+
+        <!-- CUSTOM CTA -->
+        <div class="custom-cta product-item show reveal" data-category="custom" id="custom">
+          <span style="font-size:2.5rem;">⚙️</span>
+          <h3 data-i18n="custom-cta-title">Custom Components</h3>
+          <p data-i18n="custom-cta-desc">Don't see what you need? I machine custom parts to your spec — DXF/STEP files
+            welcome. Let's build something new.</p>
+          <a href="contact.html?product=custom" class="btn-primary" data-i18n="btn-start-custom">Start a Custom Order
+            →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-bottom" style="padding-top:0; border-top:none;">
+        <p>© 2025 DarkRock Components. <span data-i18n="footer-rights">All rights reserved.</span></p>
+        <div class="footer-badge" data-i18n="footer-made-in">Made in Turkey</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Filter logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const items = document.querySelectorAll('.product-item');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        items.forEach(item => {
+          const cat = item.dataset.category;
+          const show = filter === 'all' || cat === filter;
+          item.classList.toggle('show', show);
+          item.style.display = show ? '' : 'none';
+        });
       });
     });
-  });
-</script>
+  </script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
