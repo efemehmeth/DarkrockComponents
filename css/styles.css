@@ -178,8 +178,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
   background-image: url('../images/product_direct_mount_s1.png');
-  background-size: cover; background-position: center;
-  transform: scale(1.05);
+  background-size: 80% auto;
+  background-position: center right 10%;
+  background-repeat: no-repeat;
+  transform: scale(1);
   transition: transform 8s ease;
 }
 .hero-bg::after {
