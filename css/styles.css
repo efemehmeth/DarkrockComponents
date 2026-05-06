@@ -442,14 +442,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   .nav-logo-name { font-size: 15px !important; }
   .nav-logo-sub { display: block !important; font-size: 6px !important; letter-spacing: 0.25em !important; margin-top: 2px !important; }
   .hero-content { padding: 6rem 0 4rem; }
-}
   .hero-actions { flex-direction: column; align-items: stretch; gap: 1rem; }
   .btn-primary, .btn-ghost { justify-content: center; width: 100%; }
   .hero-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
   .section { padding: 4rem 5%; }
-  .nav-logo-icon-img { width: 90px; margin-right: -8px; transform: translateY(6px); }
-  .nav-logo-name { font-size: 15px; }
-  .nav-logo-sub { display: block; font-size: 6px; letter-spacing: 0.25em; margin-top: 2px; }
   .nav-right { gap: 0.4rem; }
 }
 
@@ -525,33 +521,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .nav-logo:hover .nav-logo-icon-img {
-  width: 155px; /* Original size we liked */
-  height: auto;
-  display: block;
-  filter: url(#remove-black-filter);
-  margin-right: -25px; /* Pull text into the icon's empty space */
-  transform: translateY(8px);
-  transition: transform 0.3s ease;
-}
-
-.nav-logo:hover .nav-logo-icon-img {
-  width: 155px; /* Original size we liked */
-  height: auto;
-  display: block;
-  filter: url(#remove-black-filter);
-  margin-right: -25px; /* Pull text into the icon's empty space */
-  transform: translateY(8px);
-  transition: transform 0.3s ease;
-}
-
-.nav-logo:hover .nav-logo-icon-img {
-  width: 155px; /* Original size we liked */
-  height: auto;
-  display: block;
-  filter: url(#remove-black-filter);
-  margin-right: -25px; /* Pull text into the icon's empty space */
-  transform: translateY(8px);
-  transition: transform 0.3s ease;
+  transform: translateY(8px) scale(1.03);
 }
 
 .nav-logo-text-part {
@@ -579,46 +549,6 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   letter-spacing: 0.3em;
   margin-top: 4px;
 }
-.nav-logo:hover .nav-logo-icon-img {
-  width: 155px; /* Original size we liked */
-  height: auto;
-  display: block;
-  filter: url(#remove-black-filter);
-  margin-right: -25px; /* Pull text into the icon's empty space */
-  transform: translateY(8px);
-  transition: transform 0.3s ease;
-}
-
-.nav-logo:hover .nav-logo-icon-img {
-  width: 155px; /* Original size we liked */
-  height: auto;
-  display: block;
-  filter: url(#remove-black-filter);
-  margin-right: -25px; /* Pull text into the icon's empty space */
-  transform: translateY(8px);
-  transition: transform 0.3s ease;
-}
-
-.nav-logo:hover .nav-logo-icon-img {
-  width: 155px; /* Original size we liked */
-  height: auto;
-  display: block;
-  filter: url(#remove-black-filter);
-  margin-right: -25px; /* Pull text into the icon's empty space */
-  transform: translateY(8px);
-  transition: transform 0.3s ease;
-}
-
-.nav-logo:hover .nav-logo-icon-img {
-  width: 155px; /* Original size we liked */
-  height: auto;
-  display: block;
-  filter: url(#remove-black-filter);
-  margin-right: -25px; /* Pull text into the icon's empty space */
-  transform: translateY(8px);
-  transition: transform 0.3s ease;
-}
-
 
 
 
