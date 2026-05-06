@@ -177,7 +177,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
-  background: #080808 url('../images/product_direct_mount_s1.png') no-repeat center right 10% / contain;
+  background: #080808 url('../images/product_direct_mount_s1.png') no-repeat center right 15% / 45% auto;
   transform: scale(1);
   transition: transform 8s ease;
 }
