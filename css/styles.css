@@ -121,16 +121,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ─── HERO ─── */
-.logo-hide::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  background: #000; /* Dark cover to hide the logo */
-  pointer-events: none;
-  z-index: 10; /* Above images */
+/* Hide Watermark via Slight Zoom */
+.logo-hide img {
+  transform: scale(1.06);
+  transform-origin: center;
 }
 
 /* Product Slider */
