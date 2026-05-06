@@ -121,9 +121,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ─── HERO ─── */
-/* Hide Watermark via Slight Zoom */
+/* Hide Watermark via Slight Zoom & Position adjustment */
 .logo-hide img {
-  transform: scale(1.06);
+  transform: scale(1.06) translateX(3%);
   transform-origin: center;
 }
 
