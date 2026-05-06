@@ -144,7 +144,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .slider-track img {
-  min-width: 100%;
+  flex: 0 0 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
