@@ -177,13 +177,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .hero-bg {
   position: absolute; inset: 0; z-index: 0;
-  background: #080808 url('../images/product_direct_mount_s1.png') no-repeat center right 15% / 45% auto;
+  background: #080808 url('../images/product_direct_mount_s1.png') no-repeat center right 15% / contain;
+  background-origin: content-box;
+  padding: 12vh 12vw;
   transform: scale(1);
   transition: transform 8s ease;
 }
 .hero-bg::after {
   content: ''; position: absolute; inset: 0;
-  background: linear-gradient(135deg, rgba(8,8,8,0.92) 0%, rgba(8,8,8,0.6) 60%, rgba(8,8,8,0.85) 100%);
+  background: radial-gradient(circle at 75% 50%, rgba(8,8,8,0) 0%, rgba(8,8,8,0.4) 100%);
 }
 .hero:hover .hero-bg { transform: scale(1); }
 
