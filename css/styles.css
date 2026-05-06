@@ -129,6 +129,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Product Slider */
 .product-slider {
+  position: relative;
   display: flex;
 }
 
