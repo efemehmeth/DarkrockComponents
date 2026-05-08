@@ -29,13 +29,13 @@ const translations = {
 
     // Featured / Products
     "section-featured-eyebrow": "// Featured Components", "section-featured-title": "Built for the ", "section-featured-title-dim": "Relentless.", "section-featured-sub": "Each part machined from a single billet of aircraft-grade aluminum — zero compromises.",
-    "product-category-cockpit": "Cockpit", "product-category-saddle": "Saddle System", "product-category-brake": "Brake System", "product-inquire": "Inquire →",
+    "product-category-cockpit": "Cockpit", "product-category-saddle": "Saddle System", "product-category-brake": "Brake System", "product-category-pedals": "Pedals", "product-inquire": "Inquire →",
     "product-tag-new": "New", "product-tag-pro": "Pro", "product-price-contact": "Contact for Price",
-    "spec-steerer": "Steerer", "spec-mount": "Mount", "spec-weight": "Weight", "spec-width": "Width", "spec-clamp": "Clamp", "spec-length": "Length", "spec-rise": "Rise", "spec-diameter": "Diameter", "spec-offset": "Offset",
+    "spec-steerer": "Steerer", "spec-mount": "Mount", "spec-weight": "Weight", "spec-width": "Width", "spec-clamp": "Clamp", "spec-length": "Length", "spec-rise": "Rise", "spec-diameter": "Diameter", "spec-offset": "Offset", "spec-material": "Material", "spec-axle": "Axle", "spec-bearing": "Bearing", "spec-pins": "Pins",
     "product-gyro-name": "DR-G1 Hydraulic Gyro System", "product-gyro-desc": "Experience unrestricted 360° rotation with the gyro brake system. Enhanced with a durable hard anodized finish for reduced friction and long-lasting performance. Designed to work seamlessly with all cable disc brakes.",
     "product-handlebar-name": "DR-DIRECT MOUNT-S1", "product-handlebar-desc": "2-piece direct mount stem machined from 7075-T6. Maximum stiffness, minimum weight.",
     "product-stem-name": "DR-S1 Stem", "product-stem-desc": "4-bolt CNC-pocketed stem. Lightweight without sacrificing strength.",
-    "product-seatpost-name": "DR-P1 Seatpost", "product-seatpost-desc": "Billet seatpost with dual-bolt clamp for rock-solid saddle stability.",
+    "product-pedal-name": "DR-P1-FLAT", "product-pedal-desc": "CNC-machined 7075-T6 aluminum flat pedal with titanium axle and sealed bearings. 20 replaceable traction pins per side for ultimate grip.",
 
     // Why DarkRock
     "feature-section-eyebrow": "// Why DarkRock", "feature-section-title": "Engineered ", "feature-section-title-dim": "Differently.",
@@ -126,13 +126,13 @@ const translations = {
 
     // Featured / Products
     "section-featured-eyebrow": "// Öne Çıkan Parçalar", "section-featured-title": "Tutkuyla ", "section-featured-title-dim": "İşlendi.", "section-featured-sub": "Her bir parça, arazide sıfır taviz vermeniz için tek bir havacılık sınıfı alüminyum bloktan işlenmiştir.",
-    "product-category-cockpit": "Kokpit", "product-category-saddle": "Sele Sistemi", "product-category-brake": "Fren Sistemi", "product-inquire": "Bilgi Al →",
+    "product-category-cockpit": "Kokpit", "product-category-saddle": "Sele Sistemi", "product-category-brake": "Fren Sistemi", "product-category-pedals": "Pedallar", "product-inquire": "Bilgi Al →",
     "product-tag-new": "Yeni", "product-tag-pro": "Pro", "product-price-contact": "Fiyat İçin İletişime Geçin",
-    "spec-steerer": "Şaft", "spec-mount": "Montaj", "spec-weight": "Ağırlık", "spec-width": "Genişlik", "spec-clamp": "Kelepçe", "spec-length": "Uzunluk", "spec-rise": "Rise", "spec-diameter": "Çap", "spec-offset": "Ofset",
+    "spec-steerer": "Şaft", "spec-mount": "Montaj", "spec-weight": "Ağırlık", "spec-width": "Genişlik", "spec-clamp": "Kelepçe", "spec-length": "Uzunluk", "spec-rise": "Rise", "spec-diameter": "Çap", "spec-offset": "Ofset", "spec-material": "Malzeme", "spec-axle": "Mil", "spec-bearing": "Rulman", "spec-pins": "Pin",
     "product-gyro-name": "DR-G1 Hidrolik Gyro Sistemi", "product-gyro-desc": "Gyro fren sistemiyle sınırsız 360° dönüş özgürlüğü yaşayın. Sürtünmeyi azaltan ve uzun ömürlü performans sunan dayanıklı sert eloksal kaplama ile güçlendirilmiştir. Tüm kablolu disk frenlerle uyumlu çalışacak şekilde tasarlanmıştır.",
     "product-handlebar-name": "DR-DIRECT MOUNT-S1", "product-handlebar-desc": "7075-T6'dan işlenmiş 2 parçalı direct mount boğaz. Maksimum sertlik, minimum ağırlık.",
     "product-stem-name": "DR-S1 Boğaz", "product-stem-desc": "CNC işlemeli boğaz. Mukavemetten ödün vermeyen hafif yapı.",
-    "product-seatpost-name": "DR-P1 Sele Borusu", "product-seatpost-desc": "Kusursuz sele stabilitesi için kütükten işlenmiş sele borusu.",
+    "product-pedal-name": "DR-P1-FLAT", "product-pedal-desc": "7075-T6 alüminyumdan CNC işlenmiş flat pedal. Titanyum mil ve sealed rulman. Her tarafta 20 değiştirilebilir traction pin ile üstün tutuş.",
 
     // Why DarkRock
     "feature-section-eyebrow": "// Neden DarkRock", "feature-section-title": "Farklı ", "feature-section-title-dim": "Tasarlanmış.",
@@ -223,13 +223,13 @@ const translations = {
 
     // Featured / Products
     "section-featured-eyebrow": "// Highlights", "section-featured-title": "Gebaut für das ", "section-featured-title-dim": "Unerbittliche.", "section-featured-sub": "Jedes Teil aus einem Block Luftfahrt-Aluminium gefräst — keine Kompromisse.",
-    "product-category-cockpit": "Cockpit", "product-category-saddle": "Sattel", "product-category-brake": "Bremssystem", "product-inquire": "Details →",
+    "product-category-cockpit": "Cockpit", "product-category-saddle": "Sattel", "product-category-brake": "Bremssystem", "product-category-pedals": "Pedale", "product-inquire": "Details →",
     "product-tag-new": "Neu", "product-tag-pro": "Pro", "product-price-contact": "Preis auf Anfrage",
-    "spec-steerer": "Schaft", "spec-mount": "Montage", "spec-weight": "Gewicht", "spec-width": "Breite", "spec-clamp": "Klemmung", "spec-length": "Länge", "spec-rise": "Rise", "spec-diameter": "Durchmesser", "spec-offset": "Offset",
+    "spec-steerer": "Schaft", "spec-mount": "Montage", "spec-weight": "Gewicht", "spec-width": "Breite", "spec-clamp": "Klemmung", "spec-length": "Länge", "spec-rise": "Rise", "spec-diameter": "Durchmesser", "spec-offset": "Offset", "spec-material": "Material", "spec-axle": "Achse", "spec-bearing": "Lager", "spec-pins": "Pins",
     "product-gyro-name": "DR-G1 Hydraulik-Gyro", "product-gyro-desc": "Erleben Sie uneingeschränkte 360°-Rotation mit dem Gyro-Bremssystem. Mit langlebiger Harteloxal-Oberfläche für reduzierte Reibung und dauerhafte Leistung. Kompatibel mit allen Seilzug-Scheibenbremsen.",
     "product-handlebar-name": "DR-DIRECT MOUNT-S1", "product-handlebar-desc": "2-teiliger Direct Mount Vorbau aus 7075-T6. Maximale Steifigkeit, minimales Gewicht.",
     "product-stem-name": "DR-S1 Vorbau", "product-stem-desc": "CNC-gefräster Vorbau. Leichtgewicht ohne Stabilitätsverlust.",
-    "product-seatpost-name": "DR-P1 Sattelstütze", "product-seatpost-desc": "Gefräste Sattelstütze mit Doppelschrauben-Klemmung.",
+    "product-pedal-name": "DR-P1-FLAT", "product-pedal-desc": "CNC-gefrästes 7075-T6 Aluminium-Flatpedal mit Titanachse und gedichteten Lagern. 20 austauschbare Pins pro Seite.",
 
     // Why DarkRock
     "feature-section-eyebrow": "// Warum DarkRock", "feature-section-title": "Anders ", "feature-section-title-dim": "Entwickelt.",
